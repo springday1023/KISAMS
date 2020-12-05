@@ -69,9 +69,9 @@
   * 데이터 컴포넌트의 버튼 : map-data__button ...
 - 액션이 일어나는 부분에 대해서는 --active, --open 등으로 -- 추가 
   * 버튼 활성화 : map-data__button--active ...    
-- 타입 등이 바뀌는 클래스는 __.__네이밍__ 으로 추가   
-  * 지도 드래그/그랩: map-content__inner __.__drag, .__grab__  
-  * 아이콘 타입 h1 : icon-magnitude __.__1h__)
+- 타입 등이 바뀌는 클래스는 ____네이밍__ 으로 추가   
+  * 지도 드래그/그랩: map-content__inner ____drag, __grab__  
+  * 아이콘 타입 h1 : icon-magnitude ____1h__)
 
 -----------------------
 
