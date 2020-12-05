@@ -62,10 +62,16 @@
 -----------------------
 
 ### 🚀 CSS 클래스 네이밍
-- 페이지명 map- 으로 시작 + 블록 및 컴포넌트 의미를 가진 클래스 추가 (블록 : map-wrapper, 컴포넌트 : map-data ...)   
-- 하위는 해당 영역의 엘리먼트 (데이터 컴포넌트의 버튼 : map-data__button ...)
-- 액션이 일어나는 부분에 대해서는 --active, --open 등으로 -- 추가 (버튼 활성화 : map-data__button--active ...)  
-- 타입 등이 바뀌는 클래스는 __.__네이밍__ 으로 추가 (지도 드래그/그랩: map-content__inner __.__drag, .__grab__ , 아이콘 타입 h1 : icon-magnitude __.__1h__)
+- 페이지명 map- 으로 시작 + 블록 및 컴포넌트 의미를 가진 클래스 추가   
+  * 블록 : map-wrapper, 
+  * 컴포넌트 : map-data ...   
+- 하위는 해당 영역의 엘리먼트 
+  * 데이터 컴포넌트의 버튼 : map-data__button ...
+- 액션이 일어나는 부분에 대해서는 --active, --open 등으로 -- 추가 
+  * 버튼 활성화 : map-data__button--active ...    
+- 타입 등이 바뀌는 클래스는 __.__네이밍__ 으로 추가   
+  * 지도 드래그/그랩: map-content__inner __.__drag, .__grab__  
+  * 아이콘 타입 h1 : icon-magnitude __.__1h__)
 
 -----------------------
 
