@@ -1,19 +1,21 @@
 # kisams
 
-## 추가한 모듈
+### 추가한 모듈
 npm install -g node-sass
 npm install vuescroll
 npm install vue-slider-component --save
 
+-----------------------
 
-## SASS 컴파일 
+### SASS 컴파일 
 node-sass --output-style compressed src/assets/scss --output src/assets/css --watch
 > --output-style : compressed 압축 (minify)
 > SCSS 폴더 --output 컴파일 될 CSS 폴더  
 > --watch : SCSS 수정 시마다 관찰하여 자동 컴파일
 
+-----------------------
 
-## Build Setup
+### Build Setup
 
 ``` bash
 # install dependencies
