@@ -24,40 +24,40 @@
 ├─ NoticeBoard (알림 레이어)   
 ├─ NoticeItem   
 ├─ 📁 databoard   
-           ├─ DataBoard (왼쪽 데이터 Container)   
-           ├─ DataFilterFormEarthquake (지진 조회 조건 설정 레이어)   
-           ├─ DataFilterFormWindow (레이어 Wrapper)    
-           ├─ DataFilterSummary (데이터보드 --> 필터 정보)    
-           ├─ DataListItem (데이터보드 리스트 --> 아이템)    
-           ├─ SortableDataListEarthquake (자료개수/ 정렬 필터 / 카탈로그별)   
+    ├─ DataBoard (왼쪽 데이터 Container)   
+    ├─ DataFilterFormEarthquake (지진 조회 조건 설정 레이어)   
+    ├─ DataFilterFormWindow (레이어 Wrapper)    
+    ├─ DataFilterSummary (데이터보드 --> 필터 정보)    
+    ├─ DataListItem (데이터보드 리스트 --> 아이템)    
+    ├─ SortableDataListEarthquake (자료개수/ 정렬 필터 / 카탈로그별)   
 ├─ 📁 map   
-           ├─ Legend (맵 : 범례 레이어 - Container/Header)   
-           ├─ LegendEarthquake (맵 : 범례 레이어 - Earthquake)   
-           ├─ LegendInfraLoc (맵 : 범례 레이어 - Infrasound)   
-           ├─ LegendMetadata (맵 : 범례 레이어 - Infrasound Metadata)   
-           ├─ MapControllerGroup (우측 컨트롤부분)   
-           ├─ StationMarker (맵 : 레이어)   
-           ├─ TheMap (맵 Container)   
+    ├─ Legend (맵 : 범례 레이어 - Container/Header)   
+    ├─ LegendEarthquake (맵 : 범례 레이어 - Earthquake)   
+    ├─ LegendInfraLoc (맵 : 범례 레이어 - Infrasound)   
+    ├─ LegendMetadata (맵 : 범례 레이어 - Infrasound Metadata)   
+    ├─ MapControllerGroup (우측 컨트롤부분)   
+    ├─ StationMarker (맵 : 레이어)   
+    ├─ TheMap (맵 Container)   
 ├─ 📁 quickMenu  
-           ├─ QuickMenuGroup (상단 퀵메뉴)   
+    ├─ QuickMenuGroup (상단 퀵메뉴)   
 
 -----------------------
 
 ### 🚀 CSS 작업폴더
 ┏ 📁 src   
 ├─ 📁 assets/scss   
-          ├─ common : 공통 클래스    
-          ├─ databoard : 데이터보드    
-          ├─ databoard_form : 데이터보드 --> 필터 정보     
-          ├─ loading : 로딩   
-          ├─ map_control : 우측 컨트롤부분   
-          ├─ map_legend : 범례   
-          ├─ map_marker : 맵 안 설명 레이어   
-          ├─ map : 맵    
-          ├─ notice : 알림 레이어 
-          ├─ quickmenu : 상단 퀵메뉴   
-          ├─ reset : 리셋   
-          ├─ __default : 모든 SCSS import__      
+    ├─ common : 공통 클래스    
+    ├─ databoard : 데이터보드    
+    ├─ databoard_form : 데이터보드 --> 필터 정보     
+    ├─ loading : 로딩   
+    ├─ map_control : 우측 컨트롤부분   
+    ├─ map_legend : 범례   
+    ├─ map_marker : 맵 안 설명 레이어   
+    ├─ map : 맵    
+    ├─ notice : 알림 레이어 
+    ├─ quickmenu : 상단 퀵메뉴   
+    ├─ reset : 리셋   
+    ├─ __default : 모든 SCSS import__      
 
 -----------------------
 
