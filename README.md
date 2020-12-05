@@ -8,10 +8,10 @@
 -----------------------
 
 ### SASS 컴파일 
-node-sass --output-style compressed src/assets/scss --output src/assets/css --watch
-> --output-style : compressed 압축 (minify)
-> SCSS 폴더 --output 컴파일 될 CSS 폴더  
-> --watch : SCSS 수정 시마다 관찰하여 자동 컴파일
+- node-sass --output-style compressed src/assets/scss --output src/assets/css --watch
+-- --output-style : compressed 압축 (minify)
+-- SCSS 폴더 --output 컴파일 될 CSS 폴더  
+-- --watch : SCSS 수정 시마다 관찰하여 자동 컴파일
 
 -----------------------
 
@@ -34,9 +34,12 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-## 작업 폴더
->┏ 📁 components
->├─ App
+-----------------------
+
+
+### 작업 폴더
+-┏ 📁 components
+--├─ App
 >├─ HelpPage
 >├─ LoadingScreen
 >├─ MainMenu (왼쪽 상단 메뉴 영역 - 실시간 감시/자료 조회) 
