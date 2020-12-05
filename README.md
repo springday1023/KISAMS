@@ -1,9 +1,9 @@
 # kisams
 
 ### 추가한 모듈
-npm install -g node-sass
-npm install vuescroll
-npm install vue-slider-component --save
+- npm install -g node-sass
+- npm install vuescroll
+- npm install vue-slider-component --save
 
 -----------------------
 
