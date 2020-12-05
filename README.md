@@ -54,7 +54,7 @@
     ├─ map_legend : 범례   
     ├─ map_marker : 맵 안 설명 레이어   
     ├─ map : 맵    
-    ├─ notice : 알림 레이어 
+    ├─ notice : 알림 레이어     
     ├─ quickmenu : 상단 퀵메뉴   
     ├─ reset : 리셋   
     ├─ __default : 모든 SCSS import__      
