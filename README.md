@@ -39,7 +39,7 @@
            ├─ StationMarker (맵 : 레이어)   
            ├─ TheMap (맵 Container)   
 ├─ 📁 quickMenu   
-          ├─ QuickMenuGroup (상단 퀵메뉴)      
+           ├─ QuickMenuGroup (상단 퀵메뉴)   
 
 -----------------------
 
