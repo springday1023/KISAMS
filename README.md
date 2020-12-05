@@ -1,13 +1,13 @@
 # KISAMS
 
-### 추가한 모듈
+### 🚀 추가한 모듈
 - npm install -g node-sass
 - npm install vuescroll
 - npm install vue-slider-component --save
 
 -----------------------
 
-### SASS 컴파일 
+### 🚀 SASS 컴파일 
 - node-sass --output-style compressed src/assets/scss --output src/assets/css --watch
   * --output-style : compressed 압축 (minify)
   * SCSS 폴더 --output 컴파일 될 CSS 폴더  
@@ -15,7 +15,7 @@
 
 -----------------------
 
-### 작업 폴더
+### 🚀 작업 폴더
 ┏ 📁 components   
 ├─ App   
 ├─ HelpPage   
@@ -43,7 +43,7 @@
 
 -----------------------
 
-### CSS 작업폴더
+### 🚀 CSS 작업폴더
 ┏ 📁 src   
 ├─ 📁 assets/scss   
    ├─ common : 공통 클래스    
@@ -57,11 +57,11 @@
    ├─ notice : 알림 레이어 
    ├─ quickmenu : 상단 퀵메뉴   
    ├─ reset : 리셋   
-   ├─ default : 모든 SCSS import      
+   ├─ __default : 모든 SCSS import__      
 
 -----------------------
 
-### Build Setup
+### 🚀 Build Setup
 
 ``` bash
 # install dependencies
