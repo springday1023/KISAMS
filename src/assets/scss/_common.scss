@@ -1,0 +1,113 @@
+
+
+//  Sass Variables
+//--------------------------- */
+$main-color:#2b6bf1;
+$main-color-dark:#3a63a2;
+
+/// 기본 폰트 14px 기준 상대값
+$font-12px:0.8571em;
+$font-13px:0.9285em;
+$font-15px:1.0714em;
+$font-16px:1.1428em;
+
+
+
+/*  Common Style
+----------------------------- */
+:root{
+  /// 깊이별 색상
+  --color-1h: 255, 0, 0;
+  --color-3h: 255, 165, 0;
+  --color-6h: 255, 255, 0;
+  --color-12h:0, 136, 0;
+  --color-max:0, 0, 255;
+  --color-null:255, 255, 255;
+}
+
+
+.blind{
+  position:absolute; clip:rect(0 0 0 0);
+  margin:-1px; width:1px; height:1px; overflow:hidden;
+}
+
+
+// 아이콘 모음
+$size-15:15px;
+$size-30:30px;
+$size-40:40px;
+$size-55:55px;
+
+icon{
+  @at-root {
+    [class^="#{&}-"]{
+      display:inline-block;
+      box-sizing:border-box;
+      overflow:hidden; font-size:0; text-indent:100%; vertical-align:middle;
+    }
+
+    /// .icon-list
+    .#{&}-list{
+      border-radius:50%;
+      width:$size-30; height:$size-30;
+      background:$main-color url("../image/icon_list.png") 50% no-repeat;
+    }
+
+    /// .icon-filter
+    .#{&}-filter{
+      width:$size-30; height:$size-30;
+      background:url("../image/icon_filter.png") 50% no-repeat;
+    }
+
+    /// .icon-delete
+    .#{&}-delete{
+      position:relative;
+      width:$size-15; height:$size-15;
+
+      &:before,
+      &:after{
+        position:absolute; left:0; top:50%;
+        width:100%; height:1px; background:#fff;
+        transform:rotate(45deg);
+        content:"";
+      }
+      &:after{
+        transform:rotate(-45deg);
+      }
+    }
+
+    /// 공중음파 : .icon-infra
+    .#{&}-infra{
+      border:2px dashed rgba(255,255,255,0.7); border-radius:50%;
+      width:$size-55; height:$size-55;
+      color:#fff; line-height:$size-55 - 2; text-align:center; font-size:15px; text-indent:0;
+    }
+
+    /// 진도 : .icon-magnitude
+    .#{&}-magnitude{
+      display:inline-flex; align-items:center; justify-content:center;
+      border:2px solid rgba(var(--color-null), 0.5); border-radius:50%;
+      width:$size-40; height:$size-40;
+      color:#fff; text-align:center; font-size:15px; text-indent:0;
+
+      /// 기간
+      &.__1h{border-color: rgba(var(--color-1h), 0.7);}
+      &.__3h{border-color: rgba(var(--color-3h), 0.7);}
+      &.__6h{border-color: rgba(var(--color-6h), 0.7);}
+      &.__12h{border-color: rgba(var(--color-12h), 0.7);}
+      &.__max{border-color: rgba(var(--color-max), 0.7);}
+
+      /// 카탈로그
+      &.__manual{border-radius:5px;}
+
+      /// 규모
+      &.__3{width:$size-40 + 3; height:$size-40 + 3;}
+      &.__4{width:$size-40 + 6; height:$size-40 + 6;}
+      &.__5{width:$size-40 + 9; height:$size-40 + 9;}
+      &.__7{width:$size-40 + 12; height:$size-40 + 12;}
+      &.__9{width:$size-55; height:$size-55;}
+    }
+  }
+}
+
+

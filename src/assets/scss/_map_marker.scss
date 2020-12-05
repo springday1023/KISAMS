@@ -1,0 +1,57 @@
+
+
+/*  StationMarker.vue
+----------------------------- */
+
+.map-marker{
+  &__inner{
+    position:absolute; left:0; top:0;
+  }
+
+  &__popup{
+    position:absolute;
+    box-sizing:border-box;
+    padding-bottom:10px; opacity:0;
+    transition:opacity .25s;
+
+    &.__fadein{
+      opacity:1;
+    }
+
+    &-inner{
+      position:relative;
+      border-radius:12px; box-shadow:0 3px 14px rgba(0,0,0,.4);
+      padding:15px; min-width:180px; background:#fff;
+      color:#333; font-size:$font-12px;
+      transform:translateX(-50%);
+
+      &:after{
+        position:absolute; top:100%; left:50%;
+        margin-left:-10px; border:10px solid transparent; border-top-color:#fff;
+        content:"";
+      }
+    }
+
+    .icon-delete{
+      position:absolute; right:10px; top:10px;
+      &:before,
+      &:after{background:#333;}
+    }
+
+    h4{
+      margin-bottom:15px;
+      font-size:13px;
+    }
+
+    ul{
+      margin-left:5px;
+      list-style:inside disc;
+    }
+    li + li{
+      margin-top:5px;
+    }
+  }
+}
+
+
+

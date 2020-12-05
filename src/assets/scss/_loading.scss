@@ -1,0 +1,49 @@
+
+
+/*  LoadingScreen.vue
+----------------------------- */
+
+.map-load{
+  $spinner-size: 64px;
+  $spinner-bar-size: 5px;
+
+  position:fixed; z-index:100; left:0; right:0; top:0; bottom:0;
+  background:rgba(0,0,0,.6);
+  line-height:100vh; text-align:center;
+
+  &__spinner{
+    display:inline-block;
+    width:$spinner-size; height:$spinner-size;
+
+    div{
+      transform-origin:$spinner-size/2 $spinner-size/2;
+      animation:spinner 1.2s infinite;
+
+      &:after{
+        position:absolute; left:($spinner-size / 2) - floor($spinner-bar-size / 2); top:3px;
+        border-radius:round($spinner-bar-size / 2);
+        width:$spinner-bar-size; height:$spinner-size / 4 - 2; background:#fff;
+        content:"";
+      }
+
+      $max-num: 12;
+      @for $i from 0 to $max-num{
+        $rotate: 360;
+
+        &:nth-child(#{$i + 1}){
+          transform:rotate(#{$i * 360 / $max-num}deg);
+          animation-delay:#{-($max-num - $i) / 10}s;
+        }
+      }
+
+    }
+  }
+}
+
+@keyframes spinner{
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+
+

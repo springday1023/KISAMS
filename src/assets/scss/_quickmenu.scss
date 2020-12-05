@@ -1,0 +1,41 @@
+
+
+/*  QuickMenuGroup.vue
+----------------------------- */
+
+.map-quick{
+  $button-height:25px;
+
+  position:fixed; z-index:10; top:15px; right:100px;
+
+  ul{
+    display:flex; justify-content:space-between;
+    width:350px;
+    font-size:12px;
+  }
+
+  &__menu{
+    border-radius: $button-height / 2;
+    background:rgba(0,0,0,0.4); overflow:hidden;
+    line-height:$button-height;
+
+    h3{
+      display:inline-block;
+      padding:0 5px 0 10px;
+      font-size:100%; font-weight:400;
+    }
+  }
+
+  &__button{
+    padding:0 5px;
+    color:#fff; line-height:$button-height;
+
+    &:last-child{padding-right:10px;}
+    &:only-child{padding:0 15px;}
+
+    // 활성화
+    &--active{
+      background-color:$main-color;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+
+
+/*  NoticeBoard.vue
+----------------------------- */
+
+.map-notice{
+  position:fixed; z-index:30; left:50%; top:80px;
+  transform:translateX(-50%);
+
+  &__inner{
+    display:flex; align-items:center;
+    border-radius:10px;
+    padding:20px; max-width:350px; background:rgba(0,0,0,0.7);
+    line-height:1.5;
+
+    & + &{margin-top:15px;}
+
+    .icon-delete{
+      flex-shrink:0;
+      margin-left:20px;
+      width:16px; height:16px;
+
+      &:before,
+      &:after{height:2px;}
+    }
+  }
+
+  &__icon{
+    flex-shrink:0;
+    margin-right:20px;
+    width:50px; height:50px;
+    background:50%;
+    background-repeat:no-repeat;
+    background-size:contain;
+
+    $types: (warn, error, info);
+    @each $type in $types {
+      &.__#{$type}{background-image:url("../image/notice_#{$type}.png")}
+    }
+  }
+}
+
+
